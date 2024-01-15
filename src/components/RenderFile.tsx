@@ -9,7 +9,7 @@ const RenderFile: FunctionComponent<{
         <div className="flex items-center w-full p-4 my-2">
             <img src={`/images/${format}.png`} alt="" className="w-14 h-14" />
             <span className="mx-2">{name}</span>
-            <span className="ml-auto">{sizeInMb(sizeInBytes)}</span>
+            <span className="ml-auto">{sizeInMb(Number(sizeInBytes))}</span>
         </div>
     )
 }
